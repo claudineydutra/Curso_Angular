@@ -53,8 +53,8 @@
     </article>
 </section> -->
 
-<section class="event-binding">
-    <!-- <article>
+<!-- <section class="event-binding">
+    <article>
         <h3>Event binding</h3>
         <div>
             <button (click)="botaoClicado()" class="btn btn-primary">Me clique!</button>
@@ -76,7 +76,7 @@
                 [class.highlight]="MouseOverOut == true">
             Passe o mouse sobre mim</span>
         </div>
-    </article> -->
+    </article>
     <article>
         <h3>Two-way Data Binding</h3>
         <div>
@@ -85,5 +85,18 @@
             <input type="text" [(ngModel)]="pessoa.nome">
             <input type="text" [(ngModel)]="pessoa.idade">
         </div>
+    </article> 
+</section> -->
+
+<section class="input-output-properties">
+    <article>
+        <h3>Input Property</h3>
+        <app-curso [nome]="nomeCurso"></app-curso>
+
+        <h3>Output Property</h3>
+        <app-output-property [valor]="10"
+            (mudouValor)="onMudouValor($event)"
+        ></app-output-property>
+        
     </article>
 </section>
